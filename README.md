@@ -119,3 +119,37 @@ To denote a word or phrase as code, enclose it in tick marks.
 <code>nano</code>.
 ```
 
+#### Horizontal Rules
+To create a horizontal rule,  
+```
+use three or more 
+asterisks(***), 
+dashes (---), or 
+underscores (___) 
+```
+on a line by themselves.
+
+#### URLs and Email Addresses
+To quickly turn a URL or email address into a link, enclose it in angle brackets.
+```
+<https://www.markdownguide.org>
+<fake@example.com>
+```
+### Images
+To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
+```
+![Philadelphia's Magic Gardens. This place was so cool!]                  alt
+(/assets/images/philly-magic-gardens.jpg "Philadelphia's Magic Gardens")  path and title
+```
+##### Linking Images
+To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
+```
+[  ![]()  ]()
+```
+### Escaping Characters
+To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (\) in front of the character
+
+
+
+
+
