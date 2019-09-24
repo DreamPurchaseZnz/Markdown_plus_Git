@@ -94,13 +94,28 @@ You can organize items into ordered and unordered lists.
 #### Unordered Lists
 To create an unordered list, add 
 ```
-dashes (-), 
+dashes (-),                     <ul> <li></li>   </ul>
 asterisks (*), or 
 plus signs (+) 
 ```
 in front of line items. Indent one or more items to create a nested list.
 
+#### Adding Elements in Lists
+To add another element in a list while preserving the continuity of the list, 
+indent the element **four spaces or one tab**, as shown in the following examples.
+```
+*   This is the first list item.
+*   Here's the second list item.
 
+    I need to add another paragraph below the second list item.
 
-
+*   And here's the third list item.
+```
   
+#### Code
+To denote a word or phrase as code, enclose it in tick marks.
+```
+`code`
+<code>nano</code>.
+```
+
