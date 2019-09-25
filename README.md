@@ -327,11 +327,20 @@ I Sad a lie: ~~I LOVE YOU~~
 I Sad a lie: ~~I LOVE YOU~~
 
 ### Task Lists
+Task lists allow you to create a list of items with checkboxes
 
-
-
-
-
+To create a task list, add 
+```
+dashes (-) and 
+brackets with a space ([ ]) 
+```
+in front of task list items. To select a checkbox, add an x in between the brackets 
+```
+[x].
+```
+- [x] Come on
+- [ ] Come on
+- [ ] Come on
 
 
 
