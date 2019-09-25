@@ -297,6 +297,7 @@ Second Term
 : This is one definition of the second term.
 : This is another definition of the second term.
 
+Conclusion: it doesn't work
 ```
 <dl>
   <dt>First Term</dt>
@@ -306,6 +307,26 @@ Second Term
   <dd>This is another definition of the second term.</dd>
 </dl>
 ```
+<dl>
+  <dt>First Term</dt>
+  <dd>This is the definition of the first term.</dd>
+  <dt>Second Term</dt>
+  <dd>This is one definition of the second term. </dd>
+  <dd>This is another definition of the second term.</dd>
+</dl>
+
+### Strikethrough
+To strikethrough words, use two tilde symbols \
+```
+(~~) 
+```
+before and after the words.
+```
+I Sad a lie: ~~I LOVE YOU~~
+```
+I Sad a lie: ~~I LOVE YOU~~
+
+### Task Lists
 
 
 
