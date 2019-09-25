@@ -263,7 +263,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
     Add as many paragraphs as you like.
 Conlusion: it doesn't work
 
-### [Heading IDs]{#Here}
+### Heading IDs {#Here}
 
  To add a custom heading ID, enclose the custom ID in curly braces on the same line as the heading.
 ``` 
