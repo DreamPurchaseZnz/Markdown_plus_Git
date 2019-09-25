@@ -343,6 +343,14 @@ in front of task list items. To select a checkbox, add an x in between the brack
 - [ ] Come on
 
 
+### Automatic URL Linking
+```
+http://www.example.com
+```
+http://www.example.com
 
+##### Disabling Automatic URL Linking
+If you don’t want a URL to be automatically linked, you can remove the link by denoting the URL as code with tick marks
 
+`ttp://www.example.com`
 
