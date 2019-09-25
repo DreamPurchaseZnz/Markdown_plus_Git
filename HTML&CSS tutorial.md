@@ -80,12 +80,170 @@ A comment starts with
 <p>Hello World!</p>
 ```
 ### Self-enclosing elements
-Some HTML elements only have an opening tag:
+Some HTML elements only have an *opening tag*:
 ```
 <br> <!-- line-break -->
 <img src="https://placehold.it/50x50" alt="Description"> <!-- image -->
 <input type="text"> <!-- text input -->
 ```
+## HTML Block and Inline
+<strong>Block<strong> elements are meant to structure the main parts of your page, by dividing your content in coherent blocks.<br>
+block elements like:
+```
+paragraphs                                                                  <p>
+lists: unordered (with bullet points) <ul> or ordered lists (with numbers)  <ol>
+headings: from 1st level <h1> to 6th level headings                         <h6>
+articles                                                                    <article>
+sections                                                                    <section>
+long quotes                                                                 <blockquote>
+```
+  
+Inline elements are meant to *differentiate* part of a text, to give it a particular function or meaning. 
+Inline elements usually comprise a single or few words.
+inline elements like:
+```
+links                                               <a>
+emphasised words                                    <em>
+important words                                     <strong>
+short quotes                                        <q>
+abbreviations                                       <abbr>
+```
+### Other types of HTML elements
+There are several exceptions to the block/inline elements, but the ones you will most often encounter are:
+```
+list items for the                                                          <li>
+table, table rows, table cells for <table>, <tr> and <td> respectively
+```
+## HTML Hierarchy
+An HTML document is like a *big family tree*, with parents, siblings, children, ancestors, and descendants.
+
+It comes from the ability to **nest** HTML elements within one another.
+
+### Depth
+Because child elements can themselves contain other child elements, it’s possible to write a deeper hierarchy within an HTML document.
+
+Our above paragraph could be part of a blog article:
+```
+<article>
+  <h1>Famous football quotes</h1>
+  <p> Sir <strong>Alex Ferguson</strong> once said about Filipo Inzaghi:<q>"That lad must have been born offside"</q>.</p>
+  <p> When criticized by John Carew, <strong>Zlatan Ibrahimovic</strong> replied: <q>"What Carew does with a football, I can do with an orange"</q>. </p>
+  <p><strong>George Best</strong> said <q>"I spent a lot of money on booze, birds and fast cars. The rest I just squandered."</q> when asked about his lifestyle.</p>
+</article>
+```
+
+## HTML Semantics
+### Structure elements: organizing your page
+Here’s what a typical webpage could include:
+```
+<header>       as the first element of the page, that can include the logo and the tagline.
+<nav>          as a list of links that go to the different pages of the website.
+<h1>           as the title of the page.
+<article>      as the main content of the page, like a blog post.
+<footer>       as the last element of the page, located at the bottom.
+```
+### Text elements: defining your content
+nside these structure elements, you usually find text elements meant to define the purpose of your content.
+
+You’ll mainly use:
+```
+<p> for paragraphs
+<ul> for (unordered) lists
+<ol> for (ordered) lists
+<li> for individual list items
+<blockquote> for quotes
+```
+
+### Inline elements: distinguishing your text
+There are a lot of inline elements available, but you’ll usually come across the following:
+```
+<strong> for important words
+<em> for emphasized words
+<a> for links
+<small> for less important words
+<abbr> for abbreviations like W3C
+```
+### Generic elements
+When apparently no semantic element seems suited for your content but you still want to insert an HTML element (either for grouping or styling purposes), you can settle for one of the two generic elements:
+```
+<div> for block-level elements
+<span> for inline elements
+```
+Although these HTML elements don’t actually mean anything, they will come in handy when we’ll start using CSS.
+
+### Don’t overthink semantics
+There are about 100 semantic HTML elements to choose from.
+[All the form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+
+## HTML formatting
+```
+Tabulations, 
+empty lines, 
+successive spaces, 
+and line-breaks,
+```
+are dismissed by the computer, and are all converted into a single space.
+
+There aren’t specific rules concerning HTML formatting, but there are implicit conventions, specifically:
+```
+use tabulations                        to help visualize how HTML elements are nested
+put opening and closing tags           of block-level elements on their own line
+write inline elements                  on one line (including opening and closing tags)
+```
+
+## A valid HTML document
+```
+correct: a valid document is correctly displayed by the browser
+debugging: invalid HTML code can trigger bugs hard to target
+maintenance: a valid document is easier to update later, even by someone else
+```
+### Doctype
+To tell the browser that the HTML document is an HTML 5, just start your document with the following line
+```
+<!DOCTYPE html>
+```
+
+### The <html> element
+
+Apart from the doctype line, all your HTML document must be wrapped inside an <html> element:
+```
+ <!DOCTYPE html>
+<html>
+  <!-- The rest of your HTML code is here -->
+</html>
+```
+The <html> is technically the ancestor of all HTML elements.
+
+### The <head>
+```
+<head>
+  <title>My fabulous blog</title>
+</head>
+```
+Other HTML elements can appear in the <head>, and only in the <head>:
+```
+<link>
+<meta>
+<style>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
