@@ -229,31 +229,24 @@ Other HTML elements can appear in the `<head>`, and only in the head:
 <style>
 ```
 
+### `<body>`
+While the `<head>` only contains metadata not meant to be displayed anywhere (apart from the `<title>`), the `<body>` element is where we write all our content. Everything inside the `<body>` will be displayed in the browser window.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### A complete valid HTML document
+Combining all these requirements, we can write a simple and valid HTML document:
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MarkSheet</title>
+    <meta name="description" content="A simple HTML and CSS tutorial">
+  </head>
+  <body>
+    <p>Hello World!</p>
+  </body>
+</html>
+```
 
 
 
