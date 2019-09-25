@@ -278,7 +278,34 @@ You can link to headings with custom IDs in the file by creating a *standard lin
 ```
 return [Heading IDs title](#heading-ids)
 
+Conclusion: it doesn't work
 
+### Definition lists
+To create a definition list, type the term on the first line. On the next line, type a colon followed by a space and the definition
+```
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+```
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+
+```
+<dl>
+  <dt>First Term</dt>
+  <dd>This is the definition of the first term.</dd>
+  <dt>Second Term</dt>
+  <dd>This is one definition of the second term. </dd>
+  <dd>This is another definition of the second term.</dd>
+</dl>
+```
 
 
 
