@@ -263,7 +263,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
     Add as many paragraphs as you like.
 Conlusion: it doesn't work
 
-### Heading IDs {#Here}
+###  Heading IDs {#custom-id}
 
  To add a custom heading ID, enclose the custom ID in curly braces on the same line as the heading.
 ``` 
@@ -276,7 +276,7 @@ You can link to headings with custom IDs in the file by creating a *standard lin
 ```
 [Heading IDs](#heading-ids)	             <a href="#heading-ids">Heading IDs</a>	
 ```
-return [Heading IDs title](#Here)
+return [Heading IDs title](#heading-ids)
 
 
 
