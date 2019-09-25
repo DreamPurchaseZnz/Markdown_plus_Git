@@ -249,6 +249,8 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
     Add as many paragraphs as you like.
 ```
+Results is:
+
 Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 [^1]: This is the first footnote.
 
@@ -259,12 +261,22 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
     `{ my code }`
 
     Add as many paragraphs as you like.
-    
-    
+Conlusion: it doesn't work
 
+### [Heading IDs]{#Here}
 
+ To add a custom heading ID, enclose the custom ID in curly braces on the same line as the heading.
+``` 
+### My Great Heading {#custom-id}         <h3 id="custom-id">My Great Heading</h3>
+```
 
+#### linking heading IDs
+You can link to headings with custom IDs in the file by creating a *standard link* with a number sign (#) followed by the custom heading ID
 
+```
+[Heading IDs](#heading-ids)	             <a href="#heading-ids">Heading IDs</a>	
+```
+return [Heading IDs title](#Here)
 
 
 
