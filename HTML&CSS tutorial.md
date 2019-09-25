@@ -87,8 +87,9 @@ Some HTML elements only have an *opening tag*:
 <input type="text"> <!-- text input -->
 ```
 ## HTML Block and Inline
-<strong>Block<strong> elements are meant to structure the main parts of your page, by dividing your content in coherent blocks.<br>
+<strong>Block</strong> elements are meant to structure the main parts of your page, by dividing your content in coherent blocks.<br>
 block elements like:
+  
 ```
 paragraphs                                                                  <p>
 lists: unordered (with bullet points) <ul> or ordered lists (with numbers)  <ol>
@@ -204,24 +205,24 @@ To tell the browser that the HTML document is an HTML 5, just start your documen
 <!DOCTYPE html>
 ```
 
-### The <html> element
+### The html element
 
 Apart from the doctype line, all your HTML document must be wrapped inside an <html> element:
 ```
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <!-- The rest of your HTML code is here -->
 </html>
 ```
-The <html> is technically the ancestor of all HTML elements.
+The html is technically the ancestor of all HTML elements.
 
-### The <head>
+### The head
 ```
 <head>
   <title>My fabulous blog</title>
 </head>
 ```
-Other HTML elements can appear in the <head>, and only in the <head>:
+Other HTML elements can appear in the `<head>`, and only in the head:
 ```
 <link>
 <meta>
