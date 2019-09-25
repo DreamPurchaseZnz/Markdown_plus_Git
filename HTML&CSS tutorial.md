@@ -46,7 +46,7 @@ the closing tag </p> defines its end
 ```
 The only difference between an opening and closing tag is the slash / that precedes the name of the tag.
 
-##### Where to write HTML
+### Where to write HTML
 You’ve probably come across *simple text files*, those that have a .txt extension.
 For such a text file to become an HTML document (instead of a text document), you need to use an *.html extension*.
 
@@ -55,10 +55,37 @@ Remember:
 use a text editor like Notepad++ to create HTML documents
 use a browser like Firefox to open HTML documents
 ```
+### Attributes
+Attributes act like extra information tied to an HTML element. They are *written within an HTML tag*. As such, they are not displayed by the browser either.
 
+There are 16 HTML attributes that can be used on any HTML element. All of them are *optional*.
+```
+<a href="https://www.mozilla.com/firefox">Download Firefox</a>
+```
+Some HTML elements have *obligatory attributes*. 
+For example, when inserting an image, you have to provide the location of the image, using the src (source) attribute
+```
+<img src="#" alt="Description of the image">
+```
 
+### Comments
+They will be ignored by the browser, and are only useful for us humans who write the code.
 
-
+A comment starts with 
+```
+<!-- and ends with -->.
+```
+```
+<!-- This sentence will be ignored by the browser -->
+<p>Hello World!</p>
+```
+### Self-enclosing elements
+Some HTML elements only have an opening tag:
+```
+<br> <!-- line-break -->
+<img src="https://placehold.it/50x50" alt="Description"> <!-- image -->
+<input type="text"> <!-- text input -->
+```
 
 
 
