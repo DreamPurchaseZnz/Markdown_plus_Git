@@ -119,7 +119,8 @@ To denote a word or phrase as code, enclose it in tick marks.
 `code`
 <code>nano</code>.
 ```
-
+`code`
+<code>nano</code>.
 #### Horizontal Rules
 To create a horizontal rule,  
 ```
