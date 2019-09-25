@@ -207,7 +207,7 @@ To tell the browser that the HTML document is an HTML 5, just start your documen
 
 ### The html element
 
-Apart from the doctype line, all your HTML document must be wrapped inside an <html> element:
+Apart from the doctype line, all your HTML document must be wrapped inside an `<html>` element:
 ```
 <!DOCTYPE html>
 <html>
