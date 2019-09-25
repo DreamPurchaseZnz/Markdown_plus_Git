@@ -1,5 +1,6 @@
 # Markdown_plus_Git
 [Learn the ropes](https://www.markdownguide.org/basic-syntax)
+[Table Generator:http://www.tablesgenerator.com/markdown_tables](http://www.tablesgenerator.com/markdown_tables)
 
 ### window software
 MarkdownPad and ghost writer
@@ -148,6 +149,48 @@ To add a link to an image, enclose the Markdown for the image in brackets, and t
 ```
 ### Escaping Characters
 To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (\) in front of the character
+
+<h2>Extended syntax</h2>
+### Availability
+Extended syntax **isn’t available in all Markdown applications**. You’ll need to check whether or not the lightweight markup language your application is using supports extended syntax. If it doesn’t, it may still be possible to enable extensions in your Markdown processor.
+
+### Table
+
+To add a table, use three or more hyphens *(---)* to create each column’s header, and use pipes *(|)* to separate each column. You can optionally add pipes on either end of the table.
+
+```
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+```
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+Alignment:
+You can align text in the columns to the left, right, or center by adding a *colon (:)* to the left, right, or on both side of the hyphens within the header row.
+```
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+```
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+
+
+
+
+
+
+
+
 
 
 
