@@ -358,6 +358,202 @@ add regular cells with <td> or heading cells with <th>
   </tbody>
 </table>
 
+Although we’ve added a `<tfoot>` before the `<tbody>`, it still appears at the end.
+
+It comes from the fact that the `<tbody>` can contain a lot of rows. But the browser wants to render the foot before receiving all of the (potentially numerous) rows of data. That’s why the `<tfoot>` is first in the code.
+  
+You can merge columns or rows by using
+```
+the rowspan and colspan respectively.
+```
+Keep in mind that in order to merge columns you need to use the rowspan attribute, as it allows to span a column across several rows
+
+## HTML forms
+But the Web understands that a user is sometimes required to provide his own input. These types of interaction include:
+```
+signing up and logging in to websites
+entering personal information (name, address, credit card details…)
+filtering content (by using dropdowns, checkboxes…)
+performing a search
+uploading files
+```
+
+To accomodate for these needs, HTML provides interactive form controls:
+```
+text inputs (for one or multiple lines)
+radio buttons
+checkboxes
+dropdowns
+upload widgets
+submit buttons
+```
+```
+<input type="text">
+<!-- A checkbox -->
+<input type="checkbox">
+<!-- A radio button -->
+<input type="radio">
+```
+<input type="text">
+<!-- A checkbox -->
+<input type="checkbox">
+<!-- A radio button -->
+<input type="radio">
+
+The `<form>` is a block-level element thats defines an interactive part of a webpage. As a result, all form controls (like `<input>`, `<textarea>` or `<button>`) must appear within a `<form>` element.
+
+Two HTML attributes are required:
+```
+action contains an address that defines where the form information will be sent
+method can be either GET or POST and defines how the form information will be sent
+```
+Usually, the form information is sent to a server. How this data will then be processed goes beyond the scope of this tutorial.
+```
+Text	<input type="text">	             Allows any type of character
+Email	<input type="email">	           Might display a warning if an invalid email is entered
+Password	<input type="password">	     Shows dots as characters
+Number	<input type="number">	         Up/Down keyboard keys can be used
+Telephone	<input type="tel">	         Can trigger an autofill 
+
+Multiple line text	
+<textarea></textarea>	                  Can be resized
+```
+```
+
+<form action="/signup" method="POST">
+  <p>
+    <label>Title</label>
+    <label>
+      <input type="radio" name="title" value="mr">
+      Mr
+    </label>
+    <label>
+      <input type="radio" name="title" value="mrs">
+      Mrs
+    </label>
+    <label>
+      <input type="radio" name="title" value="miss">
+      Miss
+    </label>
+  </p>
+  <p>
+    <label>First name</label>
+    <input type="text" value="first_name">
+  </p>
+  <p>
+    <label>Last name</label>
+    <input type="text" value="last_name">
+  </p>
+  <p>
+    <label>Email</label>
+    <input type="email" value="email">
+  </p>
+  <p>
+    <label>Phone number</label>
+    <input type="tel" value="phone">
+  </p>
+  <p>
+    <label>Password</label>
+    <input type="password" value="password">
+  </p>
+  <p>
+    <label>Confirm your password</label>
+    <input type="password" value="password_confirm">
+  </p>
+  <p>
+    <label>Country</label>
+    <select>
+      <option>Canada</option>
+      <option>France</option>
+      <option>Germany</option>
+      <option>Italy</option>
+      <option>Japan</option>
+      <option>Russia</option>
+      <option>United Kingdom</option>
+      <option>United States</option>
+    </select>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" value="terms">
+      I agree to the <a href="/terms">terms and conditions</a>
+    </label>
+  </p>
+  <p>
+    <button>
+      Sign up
+    </button>
+  </p>
+</form>
+```
+<form action="/signup" method="POST">
+  <p>
+    <label>Title</label>
+    <label>
+      <input type="radio" name="title" value="mr">
+      Mr
+    </label>
+    <label>
+      <input type="radio" name="title" value="mrs">
+      Mrs
+    </label>
+    <label>
+      <input type="radio" name="title" value="miss">
+      Miss
+    </label>
+  </p>
+  <p>
+    <label>First name</label>
+    <input type="text" value="first_name">
+  </p>
+  <p>
+    <label>Last name</label>
+    <input type="text" value="last_name">
+  </p>
+  <p>
+    <label>Email</label>
+    <input type="email" value="email">
+  </p>
+  <p>
+    <label>Phone number</label>
+    <input type="tel" value="phone">
+  </p>
+  <p>
+    <label>Password</label>
+    <input type="password" value="password">
+  </p>
+  <p>
+    <label>Confirm your password</label>
+    <input type="password" value="password_confirm">
+  </p>
+  <p>
+    <label>Country</label>
+    <select>
+      <option>Canada</option>
+      <option>France</option>
+      <option>Germany</option>
+      <option>Italy</option>
+      <option>Japan</option>
+      <option>Russia</option>
+      <option>United Kingdom</option>
+      <option>United States</option>
+    </select>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" value="terms">
+      I agree to the <a href="/terms">terms and conditions</a>
+    </label>
+  </p>
+  <p>
+    <button>
+      Sign up
+    </button>
+  </p>
+</form>
+
+
+
 
 
 
