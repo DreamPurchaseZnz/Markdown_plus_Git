@@ -247,6 +247,120 @@ Combining all these requirements, we can write a simple and valid HTML document:
   </body>
 </html>
 ```
+# Html Content
+## Links
+
+In HTML, links are inline elements written with the <a> tag.
+
+The href attribute (hypertext reference) is used to define the target of the link (where you navigate to when you click).
+```
+ <a href="https://www.google.com">Google</a>.
+```
+It renders like:
+ <a href="https://www.google.com">Google</a>.
+
+There are 3 types of target you can define.
+```
+anchor targets, to navigate within the same page
+relative URLs, usually to navigate within the same website
+absolute URLs, usually to navigate to another website
+```
+
+Anchor target to navigate within the same page. By prepending 
+```
+your href with #
+```
+ you can target an HTML element with a specific id attribute.
+
+For example, 
+```
+<a href="#footer">
+```
+will navigate to the 
+```
+<div id="footer"> 
+```
+within the same HTML document. This type of href is often used to navigate back to the top of the page.
+
+## Images
+Images use the 
+```
+<img> element, 
+```
+which is a self-closing element (it only has an opening tag).
+```
+width and height
+```
+## Table
+Building a table in HTML requires a specific structure:
+```
+open a <table>
+add rows with <tr>
+add regular cells with <td> or heading cells with <th>
+```
+`<thead>`, `<tfoot>` and `<tbody>` are collections of rows. As such, they are direct children of `<table>` and direct parents of one or more `<tr>`. In short, they add one level of hierarchy.
+
+`<thead>` and `<tfoot>` are used as a summary of the columns.
+```
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Instrument</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Lennon</td>
+      <td>Rhythm Guitar</td>
+    </tr>
+    <tr>
+      <td>Paul McCartney</td>
+      <td>Bass</td>
+    </tr>
+    <tr>
+      <td>George Harrison</td>
+      <td>Lead Guitar</td>
+    </tr>
+    <tr>
+      <td>Ringo Starr</td>
+      <td>Drums</td>
+    </tr>
+  </tbody>
+</table>
+
+```
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Instrument</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Lennon</td>
+      <td>Rhythm Guitar</td>
+    </tr>
+    <tr>
+      <td>Paul McCartney</td>
+      <td>Bass</td>
+    </tr>
+    <tr>
+      <td>George Harrison</td>
+      <td>Lead Guitar</td>
+    </tr>
+    <tr>
+      <td>Ringo Starr</td>
+      <td>Drums</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
 
 
 
