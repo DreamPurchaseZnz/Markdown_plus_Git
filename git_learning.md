@@ -1,6 +1,7 @@
 # git learning
 tutorial: https://rogerdudler.github.io/git-guide/
 
+ignore: https://www.pluralsight.com/guides/how-to-use-gitignore-file
 
 ## Setup and Config
 git
