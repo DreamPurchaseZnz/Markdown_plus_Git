@@ -1,4 +1,7 @@
 # git learning
+tutorial: https://rogerdudler.github.io/git-guide/
+
+
 ## Setup and Config
 git
 config
