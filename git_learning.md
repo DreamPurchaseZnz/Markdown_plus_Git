@@ -3,6 +3,8 @@ tutorial: https://rogerdudler.github.io/git-guide/
 
 ignore: https://www.pluralsight.com/guides/how-to-use-gitignore-file
 
+reset: https://devconnected.com/how-to-unstage-files-on-git/
+
 ## Setup and Config
 git
 config
